@@ -1,0 +1,17 @@
+{
+   "compilerOptions": {
+     "target": "ES2017",
+     "module": "CommonJS",
+     "moduleResolution": "node",         // ✅ Add this
+     "typeRoots": ["./types", "./node_modules/@types"],
+     "sourceMap": true,
+     "outDir": "dist",
+     "strict": true,
+     "lib": ["ESNext"],
+     "esModuleInterop": true,
+     "skipLibCheck": true                // ✅ Optional, avoids some 3rd-party issues
+   },
+   "include": ["*.ts", "**/*.ts"],
+   "exclude": ["uploads", "dist"]
+ }
+ 
